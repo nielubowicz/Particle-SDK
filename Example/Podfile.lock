@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (3.1.3)
+  - Keys (1.0.0)
+  - Particle-SDK (0.1.0):
+    - Alamofire (~> 3.0)
+
+DEPENDENCIES:
+  - Keys (from `Pods/CocoaPodsKeys`)
+  - Particle-SDK (from `../`)
+
+EXTERNAL SOURCES:
+  Keys:
+    :path: Pods/CocoaPodsKeys
+  Particle-SDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 9f93b56389e48def9220dd57d1f44b1927229a5a
+  Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe
+  Particle-SDK: 982c68bcf2321e9f0c32c0074e72181be70d2004
+
+COCOAPODS: 0.39.0

@@ -1,40 +1,17 @@
-#
-# Be sure to run `pod lib lint Particle-SDK.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "Particle-SDK"
   s.version          = "0.1.0"
-  s.summary          = "A short description of Particle-SDK."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = <<-DESC
-                       DESC
-
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/Particle-SDK"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "Swift port of SparkSDK for iOS and Mac OS X"
+  s.homepage         = "https://github.com/nielubowicz/Particle-SDK"
   s.license          = 'MIT'
-  s.author           = { "Chris Nielubowicz" => "cnielubowicz@mobiquityinc.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/Particle-SDK.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { "Chris Nielubowicz" => "nielubowicz@gmail.com" }
+  s.source           = { :git => "https://github.com/nielubowicz/Particle-SDK.git", :tag => s.version.to_s }
 
-  s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.9'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'Particle-SDK' => ['Pod/Assets/*.png']
-  }
+  s.source_files = 'Source/**/*'
+  s.dependency 'Alamofire'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

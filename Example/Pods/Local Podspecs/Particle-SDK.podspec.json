@@ -1,0 +1,30 @@
+{
+  "name": "Particle-SDK",
+  "version": "0.1.0",
+  "summary": "Swift port of SparkSDK for iOS and Mac OS X",
+  "description": "Swift port of SparkSDK for iOS and Mac OS X. Functionality should be the same as, or similar to,\nthe SparkSDK.",
+  "homepage": "https://github.com/nielubowicz/Particle-SDK",
+  "license": "MIT",
+  "authors": {
+    "Chris Nielubowicz": "nielubowicz@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/nielubowicz/Particle-SDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Particle-SDK": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "Alamofire": [
+      "~> 3.0"
+    ]
+  }
+}
