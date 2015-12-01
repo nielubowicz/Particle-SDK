@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'Particle-SDK_Example', :exclusive => true do
+  pod "Particle-SDK", :path => "../"
+end
+
+target 'Particle-SDK_Tests', :exclusive => true do
+  pod "Particle-SDK", :path => "../"
+
+  
+end
