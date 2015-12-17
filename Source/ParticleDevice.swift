@@ -56,7 +56,7 @@ public class ParticleDevice : NSObject {
 // MARK: Variable / Function Access
 extension ParticleDevice {
     
-    func getVariable(withName: String, completion:( (AnyObject?, NSError?) -> Void)) {
+    public func getVariable(withName: String, completion:( (AnyObject?, NSError?) -> Void)) {
         guard Particle.sharedInstance.OAuthToken != nil else { return }
         
         let variableURL = url(ParticleEndpoints.Variable(deviceName: deviceName, authToken: Particle.sharedInstance.OAuthToken!, variableName: withName))

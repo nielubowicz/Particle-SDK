@@ -23,6 +23,8 @@
 		08363F111C17BB3F001CEEFF /* ParticleEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08363F051C17BB3A001CEEFF /* ParticleEndpoints.swift */; };
 		08363F121C17BB3F001CEEFF /* ParticleErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08363F061C17BB3A001CEEFF /* ParticleErrors.swift */; };
 		08363F131C17BB3F001CEEFF /* ParticleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08363F071C17BB3A001CEEFF /* ParticleUser.swift */; };
+		2863BBBA74BD13585D42F410 /* Pods_ParticleSDKOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F004A5388F2C45E249A2851 /* Pods_ParticleSDKOSX.framework */; };
+		B10F3AC7F6C757CDAEE63E0C /* Pods_ParticleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7560415658DD522CFD861BA /* Pods_ParticleSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,12 @@
 		08363F051C17BB3A001CEEFF /* ParticleEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEndpoints.swift; sourceTree = "<group>"; };
 		08363F061C17BB3A001CEEFF /* ParticleErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleErrors.swift; sourceTree = "<group>"; };
 		08363F071C17BB3A001CEEFF /* ParticleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleUser.swift; sourceTree = "<group>"; };
+		3A42154728EBBB91BF413D15 /* Pods-ParticleSDKOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleSDKOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleSDKOSX/Pods-ParticleSDKOSX.debug.xcconfig"; sourceTree = "<group>"; };
+		45770B97A0D1CFE8C6A419E0 /* Pods-ParticleSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleSDK/Pods-ParticleSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		7F004A5388F2C45E249A2851 /* Pods_ParticleSDKOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleSDKOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFABB5F2D798D5B91B4B9DD5 /* Pods-ParticleSDKOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleSDKOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleSDKOSX/Pods-ParticleSDKOSX.release.xcconfig"; sourceTree = "<group>"; };
+		E2AA2CA06509634E464F8D3C /* Pods-ParticleSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleSDK/Pods-ParticleSDK.release.xcconfig"; sourceTree = "<group>"; };
+		F7560415658DD522CFD861BA /* Pods_ParticleSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B10F3AC7F6C757CDAEE63E0C /* Pods_ParticleSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2863BBBA74BD13585D42F410 /* Pods_ParticleSDKOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +96,8 @@
 				08363ECC1C17B9CB001CEEFF /* ParticleSDKTests */,
 				08363EFA1C17BA2A001CEEFF /* ParticleSDK OSX */,
 				08363EBF1C17B9CB001CEEFF /* Products */,
+				504AB0C772FFA5622BEE974A /* Pods */,
+				7924D3C49F66AFC9D085C490 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +144,26 @@
 			path = "ParticleSDK OSX";
 			sourceTree = "<group>";
 		};
+		504AB0C772FFA5622BEE974A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45770B97A0D1CFE8C6A419E0 /* Pods-ParticleSDK.debug.xcconfig */,
+				E2AA2CA06509634E464F8D3C /* Pods-ParticleSDK.release.xcconfig */,
+				3A42154728EBBB91BF413D15 /* Pods-ParticleSDKOSX.debug.xcconfig */,
+				CFABB5F2D798D5B91B4B9DD5 /* Pods-ParticleSDKOSX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7924D3C49F66AFC9D085C490 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7560415658DD522CFD861BA /* Pods_ParticleSDK.framework */,
+				7F004A5388F2C45E249A2851 /* Pods_ParticleSDKOSX.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -158,10 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08363ED21C17B9CB001CEEFF /* Build configuration list for PBXNativeTarget "ParticleSDK" */;
 			buildPhases = (
+				6EEE2C18AB93A5B12EB74D8B /* Check Pods Manifest.lock */,
 				08363EB91C17B9CB001CEEFF /* Sources */,
 				08363EBA1C17B9CB001CEEFF /* Frameworks */,
 				08363EBB1C17B9CB001CEEFF /* Headers */,
 				08363EBC1C17B9CB001CEEFF /* Resources */,
+				41A7D7F79ADA4A1A05B01998 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,10 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08363EFE1C17BA2A001CEEFF /* Build configuration list for PBXNativeTarget "ParticleSDKOSX" */;
 			buildPhases = (
+				D0F68D5B18BAD2E35B722A15 /* Check Pods Manifest.lock */,
 				08363EF41C17BA2A001CEEFF /* Sources */,
 				08363EF51C17BA2A001CEEFF /* Frameworks */,
 				08363EF61C17BA2A001CEEFF /* Headers */,
 				08363EF71C17BA2A001CEEFF /* Resources */,
+				92F7B9B534CCDB091A4118B8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,6 +307,69 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41A7D7F79ADA4A1A05B01998 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParticleSDK/Pods-ParticleSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EEE2C18AB93A5B12EB74D8B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92F7B9B534CCDB091A4118B8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParticleSDKOSX/Pods-ParticleSDKOSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F68D5B18BAD2E35B722A15 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08363EB91C17B9CB001CEEFF /* Sources */ = {
@@ -359,6 +458,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -400,6 +500,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -409,7 +510,9 @@
 		};
 		08363ED31C17B9CB001CEEFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45770B97A0D1CFE8C6A419E0 /* Pods-ParticleSDK.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -427,7 +530,9 @@
 		};
 		08363ED41C17B9CB001CEEFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2AA2CA06509634E464F8D3C /* Pods-ParticleSDK.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -464,8 +569,10 @@
 		};
 		08363EFF1C17BA2A001CEEFF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A42154728EBBB91BF413D15 /* Pods-ParticleSDKOSX.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -475,8 +582,8 @@
 				INFOPLIST_FILE = "ParticleSDK OSX/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mobiquityinc.ParticleSDK-OSX";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiquityinc.ParticleSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -485,8 +592,10 @@
 		};
 		08363F001C17BA2A001CEEFF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFABB5F2D798D5B91B4B9DD5 /* Pods-ParticleSDKOSX.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -496,8 +605,8 @@
 				INFOPLIST_FILE = "ParticleSDK OSX/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mobiquityinc.ParticleSDK-OSX";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiquityinc.ParticleSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -523,6 +632,7 @@
 				08363ED41C17B9CB001CEEFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08363ED51C17B9CB001CEEFF /* Build configuration list for PBXNativeTarget "ParticleSDKTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +641,7 @@
 				08363ED71C17B9CB001CEEFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08363EFE1C17BA2A001CEEFF /* Build configuration list for PBXNativeTarget "ParticleSDKOSX" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +650,7 @@
 				08363F001C17BA2A001CEEFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
