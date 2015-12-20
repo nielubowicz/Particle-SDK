@@ -26,6 +26,7 @@ public class ParticleDevice : NSObject {
     public var connected: Bool = false
     public var last_ip_address: String = ""
     public var last_heard: String = ""
+    public var date_last_heard: NSDate?
     
     init(deviceJSON: Dictionary<String,AnyObject>) {
         if let id = deviceJSON[DeviceParameterNames.id.rawValue] as? String {
@@ -45,6 +46,7 @@ public class ParticleDevice : NSObject {
         }
         if let last_heard = deviceJSON[DeviceParameterNames.last_heard.rawValue] as? String {
             self.last_heard = last_heard
+            date_last_heard = Particle.dateFormatter.dateFromString(last_heard)
         }
     }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081E1BDD1C26629700E3C1C6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081E1BDC1C26629700E3C1C6 /* Event.swift */; };
 		08363EC21C17B9CB001CEEFF /* ParticleSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 08363EC11C17B9CB001CEEFF /* ParticleSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08363EC91C17B9CB001CEEFF /* ParticleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08363EBE1C17B9CB001CEEFF /* ParticleSDK.framework */; };
 		08363ECE1C17B9CB001CEEFF /* ParticleSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08363ECD1C17B9CB001CEEFF /* ParticleSDKTests.swift */; };
@@ -23,6 +24,10 @@
 		08363F111C17BB3F001CEEFF /* ParticleEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08363F051C17BB3A001CEEFF /* ParticleEndpoints.swift */; };
 		08363F121C17BB3F001CEEFF /* ParticleErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08363F061C17BB3A001CEEFF /* ParticleErrors.swift */; };
 		08363F131C17BB3F001CEEFF /* ParticleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08363F071C17BB3A001CEEFF /* ParticleUser.swift */; };
+		08E87CDA1C2395F200427AB2 /* ParticleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E87CD91C2395F200427AB2 /* ParticleEvent.swift */; };
+		08E87CDB1C2395F200427AB2 /* ParticleEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E87CD91C2395F200427AB2 /* ParticleEvent.swift */; };
+		08E87CDE1C2399A400427AB2 /* EventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E87CDD1C2399A400427AB2 /* EventSource.swift */; };
+		08E87CDF1C2399A400427AB2 /* EventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E87CDD1C2399A400427AB2 /* EventSource.swift */; };
 		2863BBBA74BD13585D42F410 /* Pods_ParticleSDKOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F004A5388F2C45E249A2851 /* Pods_ParticleSDKOSX.framework */; };
 		B10F3AC7F6C757CDAEE63E0C /* Pods_ParticleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7560415658DD522CFD861BA /* Pods_ParticleSDK.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05FD5E9DBD3B0A4F7B60812F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		081E1BDC1C26629700E3C1C6 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Helpers/Event.swift; sourceTree = "<group>"; };
 		08363EBE1C17B9CB001CEEFF /* ParticleSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ParticleSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08363EC11C17B9CB001CEEFF /* ParticleSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParticleSDK.h; sourceTree = "<group>"; };
 		08363EC31C17B9CB001CEEFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +60,8 @@
 		08363F051C17BB3A001CEEFF /* ParticleEndpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEndpoints.swift; sourceTree = "<group>"; };
 		08363F061C17BB3A001CEEFF /* ParticleErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleErrors.swift; sourceTree = "<group>"; };
 		08363F071C17BB3A001CEEFF /* ParticleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleUser.swift; sourceTree = "<group>"; };
+		08E87CD91C2395F200427AB2 /* ParticleEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEvent.swift; sourceTree = "<group>"; };
+		08E87CDD1C2399A400427AB2 /* EventSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventSource.swift; path = Helpers/EventSource.swift; sourceTree = "<group>"; };
 		3A42154728EBBB91BF413D15 /* Pods-ParticleSDKOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleSDKOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleSDKOSX/Pods-ParticleSDKOSX.debug.xcconfig"; sourceTree = "<group>"; };
 		45770B97A0D1CFE8C6A419E0 /* Pods-ParticleSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParticleSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParticleSDK/Pods-ParticleSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		7F004A5388F2C45E249A2851 /* Pods_ParticleSDKOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParticleSDKOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,11 +123,13 @@
 		08363EC01C17B9CB001CEEFF /* ParticleSDK */ = {
 			isa = PBXGroup;
 			children = (
+				08E87CDC1C23999800427AB2 /* Helpers */,
 				08363F021C17BB3A001CEEFF /* EndpointProtocols.swift */,
 				08363F031C17BB3A001CEEFF /* Particle.swift */,
 				08363F041C17BB3A001CEEFF /* ParticleDevice.swift */,
 				08363F051C17BB3A001CEEFF /* ParticleEndpoints.swift */,
 				08363F061C17BB3A001CEEFF /* ParticleErrors.swift */,
+				08E87CD91C2395F200427AB2 /* ParticleEvent.swift */,
 				08363F071C17BB3A001CEEFF /* ParticleUser.swift */,
 				08363EC11C17B9CB001CEEFF /* ParticleSDK.h */,
 				08363EC31C17B9CB001CEEFF /* Info.plist */,
@@ -144,6 +155,15 @@
 			path = "ParticleSDK OSX";
 			sourceTree = "<group>";
 		};
+		08E87CDC1C23999800427AB2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				08E87CDD1C2399A400427AB2 /* EventSource.swift */,
+				081E1BDC1C26629700E3C1C6 /* Event.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		504AB0C772FFA5622BEE974A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +180,7 @@
 			children = (
 				F7560415658DD522CFD861BA /* Pods_ParticleSDK.framework */,
 				7F004A5388F2C45E249A2851 /* Pods_ParticleSDKOSX.framework */,
+				05FD5E9DBD3B0A4F7B60812F /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -376,12 +397,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E87CDA1C2395F200427AB2 /* ParticleEvent.swift in Sources */,
 				08363F0C1C17BB3A001CEEFF /* ParticleErrors.swift in Sources */,
 				08363F081C17BB3A001CEEFF /* EndpointProtocols.swift in Sources */,
+				081E1BDD1C26629700E3C1C6 /* Event.swift in Sources */,
 				08363F0D1C17BB3A001CEEFF /* ParticleUser.swift in Sources */,
 				08363F0A1C17BB3A001CEEFF /* ParticleDevice.swift in Sources */,
 				08363F0B1C17BB3A001CEEFF /* ParticleEndpoints.swift in Sources */,
 				08363F091C17BB3A001CEEFF /* Particle.swift in Sources */,
+				08E87CDE1C2399A400427AB2 /* EventSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,12 +421,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08E87CDB1C2395F200427AB2 /* ParticleEvent.swift in Sources */,
 				08363F121C17BB3F001CEEFF /* ParticleErrors.swift in Sources */,
 				08363F0E1C17BB3F001CEEFF /* EndpointProtocols.swift in Sources */,
 				08363F131C17BB3F001CEEFF /* ParticleUser.swift in Sources */,
 				08363F101C17BB3F001CEEFF /* ParticleDevice.swift in Sources */,
 				08363F111C17BB3F001CEEFF /* ParticleEndpoints.swift in Sources */,
 				08363F0F1C17BB3F001CEEFF /* Particle.swift in Sources */,
+				08E87CDF1C2399A400427AB2 /* EventSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

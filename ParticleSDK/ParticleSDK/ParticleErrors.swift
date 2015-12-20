@@ -27,10 +27,11 @@ enum ParticleErrors {
     case DeviceNotConnected(deviceName: String)
     case DeviceFailedToRefresh(deviceName: String)
     case MaximumArgLengthExceeded()
+    case NoAccessToken()
 }
 
 
-extension ParticleErrors : Description, ErrorCode {
+extension ParticleErrors : ErrorType, Description, ErrorCode {
     
     var localizedDescription: String {
         switch self {
@@ -46,8 +47,9 @@ extension ParticleErrors : Description, ErrorCode {
             return "Device \(deviceName) failed to refresh"
         case .MaximumArgLengthExceeded():
             return "Maximum argument length cannot exceed \(MAX_SPARK_FUNCTION_ARG_LENGTH)"
-        }
-        
+        case .NoAccessToken():
+            return "No active access token"
+        }        
     }
     
     var errorCode: Int {
@@ -64,6 +66,8 @@ extension ParticleErrors : Description, ErrorCode {
             return 1009
         case .MaximumArgLengthExceeded():
             return 1000
+        case .NoAccessToken():
+            return 4
         }
     }
     

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Particle-SDK"
-  s.version          = "0.1.0"
+  s.version          = "0.1.4"
   s.summary          = "Swift port of SparkSDK for iOS and Mac OS X"
   s.homepage         = "https://github.com/nielubowicz/Particle-SDK"
   s.license          = 'MIT'
